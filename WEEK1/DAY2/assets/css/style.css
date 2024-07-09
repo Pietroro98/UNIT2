@@ -40,10 +40,10 @@ header {
 }
 #underline {
   position: absolute;
-    left: -1%;
-    top: 90%;
-    opacity: 0.5;
-    width: 95%;
+  left: -1%;
+  top: 90%;
+  opacity: 0.5;
+  width: 95%;
 }
 @media screen and (min-width: 800px) {
   header {
@@ -76,7 +76,7 @@ header {
   header .brand p {
     margin-bottom: 0;
   }
-  #underline{
+  #underline {
     width: 45%;
     left: 41%;
     top: 80%;
@@ -117,7 +117,6 @@ main {
     padding: 2em;
   }
 }
-
 
 section {
   background-color: #e3e3e3;
@@ -203,7 +202,6 @@ h1 + p {
   section {
     border-radius: 20px;
   }
-  
 }
 
 .imgLeft {
@@ -251,6 +249,7 @@ iframe {
 }
 
 /* TABELLE */
+
 table {
   margin-bottom: 2em;
 }
@@ -294,6 +293,16 @@ tbody tr:last-of-type {
 }
 
 /* FORM */
+
+section {
+position: relative;
+}
+section h2{
+  position: absolute;
+  top: -10%;
+}
+
+
 input {
   padding: 5px;
   border: 0;
