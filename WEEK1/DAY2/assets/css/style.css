@@ -295,13 +295,12 @@ tbody tr:last-of-type {
 /* FORM */
 
 section {
-position: relative;
+  position: relative;
 }
-section h2{
+section h2 {
   position: absolute;
   top: -10%;
 }
-
 
 input {
   padding: 5px;
