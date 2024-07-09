@@ -31,8 +31,20 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
-
+.container-underline {
+  position: relative;
+}
+#underline {
+  position: absolute;
+    left: -1%;
+    top: 90%;
+    opacity: 0.5;
+    width: 95%;
+}
 @media screen and (min-width: 800px) {
   header {
     padding: 1em;
@@ -63,6 +75,11 @@ header {
   }
   header .brand p {
     margin-bottom: 0;
+  }
+  #underline{
+    width: 45%;
+    left: 41%;
+    top: 80%;
   }
 }
 
@@ -100,23 +117,12 @@ main {
     padding: 2em;
   }
 }
-.clearfix {
-  position: relative;
-}
-.underline {
-  width: 47%;
-  z-index: 97;
-  position: absolute;
-  left: 40%;
-  top: 3%;
-  opacity:0.5 ;
-}
+
 
 section {
   background-color: #e3e3e3;
   padding: 1.5em 1em;
   margin-bottom: 2em;
- 
 }
 
 section h2 {
@@ -139,8 +145,6 @@ h1 {
   margin-bottom: 0.7em;
   z-index: 98;
   position: relative;
-  
-  
 }
 
 p,
@@ -199,6 +203,7 @@ h1 + p {
   section {
     border-radius: 20px;
   }
+  
 }
 
 .imgLeft {
