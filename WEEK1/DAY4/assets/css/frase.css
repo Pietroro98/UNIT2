@@ -1,0 +1,109 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+body {
+    margin: 0;
+    font-family: "Bree Serif", serif;
+    font-weight: 400px;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 20px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#testoAlternato {
+    border: 4px solid #5e5d5d;
+    width: 40%;
+
+}
+
+p {
+    margin-left: 15px;
+
+}
+
+@keyframes ruota {
+    0% {
+        color: transparent;
+        top: -40px;
+    }
+
+    25% {
+        color: #6e8ca1;
+        top: -20px;
+    }
+
+    50% {
+        color: transparent;
+        top: 0px;
+    }
+}
+
+.parole {
+    position: relative;
+    display: flex;
+}
+
+.parole i {
+    position: absolute;
+    top: 0;
+    color: transparent;
+    animation: ruota 6s infinite 0s;
+    left: 240px;
+}
+
+.parole i:nth-of-type(2) {
+    animation-delay: 2s;
+}
+
+.parole i:nth-of-type(3) {
+    animation-delay: 4s;
+}
+
+span {
+    margin: 5px;
+}
+
+
+.button {
+    display: flex;
+    justify-content:center;
+}
+.button button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #096672;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+}
+.button button:hover {
+    background-color: #95d6f0;
+    color: black;
+}
+
+.button button:active {
+    box-shadow: 0 5px #161616;
+    transform: translateY(4px);
+}

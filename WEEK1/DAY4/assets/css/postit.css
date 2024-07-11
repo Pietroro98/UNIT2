@@ -1,0 +1,118 @@
+body {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  text-align: center;
+  background-color: #666666;
+  font-size: 30px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.yellow,
+.green,
+.viol {
+  margin: 20px;
+  width: 20%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px 0px;
+  animation: smash 9s 1s;
+}
+
+.yellow {
+  background: linear-gradient(to bottom, #f8f8c6, #bdbea2);
+  rotate: -5deg;
+}
+
+.green {
+  background: linear-gradient(to bottom, #cafaca, #9eb5a1);
+  rotate: 7deg;
+}
+
+.viol {
+  background: linear-gradient(to bottom, #c6c6f1, #8b8c9b);
+  rotate: -8deg;
+}
+
+.yellow:hover,
+.green:hover,
+.viol:hover {
+  scale: 1.2;
+  rotate: 0deg;
+}
+
+@keyframes smash {
+  0% {
+    transform: translate(0) rotate(0);
+  }
+
+  10% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  25% {
+    transform: translate(0%) rotate(225deg);
+  }
+  30% {
+    transform: translate(50%, 50%) rotate(270deg);
+  }
+  35% {
+    transform: translate(-50%, -50%) rotate(315deg);
+  }
+
+  40% {
+    transform: translate(0deg) rotate(360deg);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) rotate(-135deg);
+  }
+  65% {
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+  70% {
+    transform: translate(50%, 50%) rotate(-225deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(-270deg);
+  }
+
+  80% {
+    transform: translate(50%, 50%) rotate(-315deg);
+  }
+
+  100% {
+    transform: translate(50%, 50%) rotate(0deg);
+  }
+}
+
+#elemento1 {
+  animation: smashAnimation1 0.5s ease forwards;
+}
+
+@keyframes smashAnimation1 {
+  0% {
+    transform: scale(20);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
