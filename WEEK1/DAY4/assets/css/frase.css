@@ -64,7 +64,7 @@ p {
     top: 0;
     color: transparent;
     animation: ruota 6s infinite 0s;
-    left: 240px;
+    margin-left: 240px;
 }
 
 .parole i:nth-of-type(2) {
