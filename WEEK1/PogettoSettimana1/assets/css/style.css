@@ -152,7 +152,11 @@ span {
   margin-top: 0;
   margin-right: 20px;
 }
-
+.container-card img{
+    position: relative;
+    right: -140px;
+    top: -46px;
+}
 .card h3 {
   font-size: 1em;
   font-weight: 800;
