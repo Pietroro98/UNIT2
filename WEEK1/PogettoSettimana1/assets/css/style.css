@@ -96,6 +96,8 @@ h1 {
 .container-card {
   display: flex;
   width: 26%;
+  margin-bottom: 40px ;
+  
 }
 
 .container-top-card {
@@ -116,6 +118,11 @@ h1 {
     display: flex;
     align-items: center;
 }
+.quadrato{
+    display: flex;
+    align-items: center;
+}
+
 .cerchio img {
   border-radius: 50%;
 }
