@@ -289,3 +289,91 @@ hr,
 .box {
   margin: -9px 8px;
 }
+
+
+@media screen and (max-width:768px) {
+
+
+    button {
+        width: 30%;
+    }
+
+    .tag-navbar {
+        width: 60%;
+
+    }
+nav{
+    height: 8vh;
+}
+    .top-description {
+
+        width: 40%;
+    }
+
+    .top-descrition h1 {
+        font-size: 3em;
+    }
+
+    .my-svg {
+        width: 50%;
+    }
+
+    .top-section {
+
+        justify-content: center;
+    }
+
+    .top-descrition p {
+        font-size: 15px;
+        width: 88%;
+
+    }
+
+    .top-descrition button {
+        margin-top: 26px;
+        width: 65%;
+    }
+
+    .trending h2 {
+        font-size: 1em;
+    }
+
+    .container-card {
+        width: 48%;
+    }
+
+    .articoli {
+        flex-direction: column-reverse;
+    }
+
+    .container-footer {
+        width: 100%;
+    }
+
+    .footer {
+        margin-bottom: 10px;
+    }
+
+    .discover {
+        width: 72%;
+    }
+
+    .container-aside {
+        position: static;
+        z-index: 0;
+    }
+
+    .container-articoli {
+        width: 110%;
+    }
+    
+.articoli {
+    width: 100%;
+}
+.card2 {
+    width: 59%;
+}
+.section-img {
+    width: 39%;
+}
+}
