@@ -102,6 +102,7 @@ h1 {
   display: flex;
   width: 26%;
   margin-bottom: 40px;
+
 }
 
 .container-top-card {
@@ -116,6 +117,12 @@ h1 {
   margin: 10px;
   margin-left: 0;
 }
+.container-card .stella{
+    display: flex;
+    
+}
+
+
 
 .cerchio {
   display: flex;
@@ -140,12 +147,12 @@ h1 {
 }
 
 .gray {
-  color: #191919;
+  color: black;
   opacity: 0.1;
   font-size: 2.5em;
 }
 span {
-  color: #191919;
+  color: black;
   opacity: 0.7;
 }
 .container-card h2 {
