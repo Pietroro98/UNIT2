@@ -90,29 +90,37 @@ h1 {
 
 .trending {
   display: flex;
+  margin-left: 11%;
 }
 
 .container-card {
   display: flex;
-  width: 30%;
+  width: 26%;
 }
 
 .container-top-card {
   display: flex;
-  align-items: flex-start;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  
 }
 
 .card img {
-  width: 9%;
-  margin: 10px;
+  width: 5%;
+  margin:10px;
   margin-left: 0;
 }
 
+.cerchio{
+    display: flex;
+    align-items: center;
+}
 .cerchio img {
   border-radius: 50%;
+}
+.quadrato img {
+    border-radius: 6px;
 }
 
 .card {
@@ -123,13 +131,18 @@ h1 {
 
 .gray {
   color: #191919;
-  opacity: 0.3;
+  opacity: 0.1;
   font-size: 2.5em;
+}
+.container-card h2{
+margin-top: 0;
+margin-right: 20px;
 }
 
 .card h3 {
   font-size: 1em;
   font-weight: 800;
+  margin: 0%;
 }
 
 .size-p-card {
