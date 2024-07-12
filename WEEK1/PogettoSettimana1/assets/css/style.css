@@ -285,6 +285,9 @@ hr,
   width: 30%;
   justify-content: space-evenly;
 }
+.footer{
+width: 40%;
+}
 
 .box {
   margin: -9px 8px;
