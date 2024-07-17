@@ -15,24 +15,24 @@
         width: 50%;
         color: $testoh1;
         margin-bottom: 0;
-        animation: aCaso1 2s ease-in ;
+        animation: animation1 2s ease-in ;
       }
       p {
         color: $testo;
         font-size: 1.2rem;
-        animation: aCaso2 2s ease-in ;
+        animation: animation2 2s ease-in ;
       }
       .bottoni {
         display: flex;
         margin-top: 20px;
-        animation: aCaso3 2s ease-in ;
+        animation: animation3 2s ease-in ;
       }
     }
     .img {
       position: relative;
       width: 30%;
       bottom: -50px;
-      animation:aCaso 1s ease-in;
+      animation: animation 1s ease-in;
       img {
         width: 100%;
         border-radius: 10px;
@@ -44,7 +44,7 @@
   }
 }
 
-@keyframes aCaso {
+@keyframes animation {
   from {
     position: relative;
     top: 50vh;
@@ -56,7 +56,7 @@
   }
 }
 
-@keyframes aCaso1 {
+@keyframes animation1 {
     from {
         position: relative;
         top: -20vh;
@@ -68,7 +68,7 @@
       }
     
 }
-@keyframes aCaso2 {
+@keyframes animation2 {
     from {
         position: relative;
         top: -10vh;
@@ -80,7 +80,7 @@
       }
     
 }
-@keyframes aCaso3 {
+@keyframes animation3 {
     from {
         position: relative;
         left: -10vh;

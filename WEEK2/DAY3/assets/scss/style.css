@@ -155,23 +155,23 @@ main .container .card img {
   width: 50%;
   color: #28064f;
   margin-bottom: 0;
-  animation: aCaso1 2s ease-in;
+  animation: animation1 2s ease-in;
 }
 .container1 .container .contenuto p {
   color: #f4f4f4;
   font-size: 1.2rem;
-  animation: aCaso2 2s ease-in;
+  animation: animation2 2s ease-in;
 }
 .container1 .container .contenuto .bottoni {
   display: flex;
   margin-top: 20px;
-  animation: aCaso3 2s ease-in;
+  animation: animation3 2s ease-in;
 }
 .container1 .container .img {
   position: relative;
   width: 30%;
   bottom: -50px;
-  animation: aCaso 1s ease-in;
+  animation: animation 1s ease-in;
 }
 .container1 .container .img img {
   width: 100%;
@@ -180,7 +180,7 @@ main .container .card img {
   box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes aCaso {
+@keyframes animation {
   from {
     position: relative;
     top: 50vh;
@@ -191,7 +191,7 @@ main .container .card img {
     opacity: 1;
   }
 }
-@keyframes aCaso1 {
+@keyframes animation1 {
   from {
     position: relative;
     top: -20vh;
@@ -202,7 +202,7 @@ main .container .card img {
     opacity: 1;
   }
 }
-@keyframes aCaso2 {
+@keyframes animation2 {
   from {
     position: relative;
     top: -10vh;
@@ -213,7 +213,7 @@ main .container .card img {
     opacity: 1;
   }
 }
-@keyframes aCaso3 {
+@keyframes animation3 {
   from {
     position: relative;
     left: -10vh;
