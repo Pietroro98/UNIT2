@@ -1,0 +1,30 @@
+@import "color";
+
+main {
+  margin-top: 100px;
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    .card {
+      width: 23%;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      animation: aCaso 3s ease-in;
+    }
+  }
+}
+
+@keyframes aCaso {
+  from {
+    position: relative;
+    top: 50vh;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

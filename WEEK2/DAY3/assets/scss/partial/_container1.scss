@@ -1,0 +1,94 @@
+@import "color";
+
+.container1 {
+  background-color: $bg_hero;
+  .container {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    .contenuto {
+      width: 60%;
+      h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        width: 50%;
+        color: $testoh1;
+        margin-bottom: 0;
+        animation: aCaso1 2s ease-in ;
+      }
+      p {
+        color: $testo;
+        font-size: 1.2rem;
+        animation: aCaso2 2s ease-in ;
+      }
+      .bottoni {
+        display: flex;
+        margin-top: 20px;
+        animation: aCaso3 2s ease-in ;
+      }
+    }
+    .img {
+      position: relative;
+      width: 30%;
+      bottom: -50px;
+      animation:aCaso 1s ease-in;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #b77dff;
+        box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.3);
+        
+      }
+    }
+  }
+}
+
+@keyframes aCaso {
+  from {
+    position: relative;
+    top: 50vh;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes aCaso1 {
+    from {
+        position: relative;
+        top: -20vh;
+        opacity: 0;
+      }
+      to {
+       top: 80;
+        opacity: 1;
+      }
+    
+}
+@keyframes aCaso2 {
+    from {
+        position: relative;
+        top: -10vh;
+        opacity: 0;
+      }
+      to {
+       top: 80px;
+        opacity: 1;
+      }
+    
+}
+@keyframes aCaso3 {
+    from {
+        position: relative;
+        left: -10vh;
+        opacity: 0;
+      }
+      to {
+       left: 80px;
+        opacity: 1;
+      }
+    
+}
