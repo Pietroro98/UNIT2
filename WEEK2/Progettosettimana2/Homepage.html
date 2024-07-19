@@ -16,16 +16,16 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body data-bs-theme="dark">
     <header>
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="Homepage.html"
+            <a class="navbar-brand overb" href="Homepage.html"
               ><img src="assets/img/netflix_logo.png" width="100" alt="logo"
             /></a>
             <button
-              class="navbar-toggler border border-white"
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -71,34 +71,36 @@
                       aria-expanded="false"
                     >
                       <img
-                        src="assets/img/avatar.png"
-                        width="60"
-                        alt="avatar"
+                        src="assets/img/kids_icon.png"
+                        width="70"
+                        alt="kids"
                       />
                     </button>
 
-                    <ul class="dropdown-menu bg-light">
+                    <ul class="dropdown-menu bg-black">
                       <li>
                         <a class="dropdown-item active" href="profile.html"
                           ><img
-                            src="assets/img/kids_icon.png"
+                            src="assets/img/avatar.png"
                             width="40"
-                            alt="kids"
+                            alt="avatar"
                           />Strive Student</a
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="...">Edit Profiles</a>
+                        <a class="dropdown-item" href="profile.html"
+                          >Edit Profiles</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="...">Account</a>
+                        <a class="dropdown-item" href="account.html">Account</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="...">Help Center</a>
+                        <a class="dropdown-item" href="#">Help Center</a>
                       </li>
                       <li><hr class="dropdown-divider" /></li>
                       <li>
-                        <a class="dropdown-item" href="#">Sing Out</a>
+                        <a class="dropdown-item" href="#">Sign Out</a>
                       </li>
                     </ul>
                   </div>
@@ -111,143 +113,344 @@
     </header>
 
     <main>
-      <div class="container-fluid">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <h4>Trending Now</h4>
-                <div class="carousel-item active mt-2 mb-5">
-                    <div class="container-fluid p-0">
-                        <div class="row">
-                    <div class="col-12 col-md-2 mb-3 p-1 img">
-                     <img src="./assets/media/media1.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media2.webp" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media3.webp" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media4.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media5.webp" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media6.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  
-                </div>
-                </div>
-                </div>
-            
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+      <div class="container-fluid d-flex mt-3">
+        <div class="container-fluid d-flex">
+          <h2 class="pe-4">TV Shows</h2>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle border border-1 border-secondary over"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Genres
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            </div>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Horror</a></li>
+              <li><a class="dropdown-item" href="#">Fantasy</a></li>
+            </ul>
           </div>
-
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <h4>Watch It Again</h4>
-                <div class="carousel-item active mt-2 mb-5">
-                    <div class="container-fluid p-0">
-                        <div class="row">
-                    <div class="col-12 col-md-2 mb-3 p-1 img">
-                     <img src="./assets/media/media7.webp" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media8.webp" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media9.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media10.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media11.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media12.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  
-                </div>
-                </div>
-                </div>
-            
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+        </div>
+        <div class="d-flex">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button
+              type="button"
+              class="btn border border-1 border-secondary rounded-1 over"
+            >
+              <i class="bi bi-text-left"></i>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button
+              type="button"
+              class="btn border border-1 border-secondary rounded-1 over"
+            >
+              <i class="bi bi-grid"></i>
             </button>
-            </div>
           </div>
-
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <h4>Now Releases</h4>
-                <div class="carousel-item active mt-2">
-                    <div class="container-fluid p-0">
-                        <div class="row">
-                    <div class="col-12 col-md-2 mb-3 p-1 img">
-                     <img src="./assets/media/media13.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media14.webp" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media15.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media16.webp" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media17.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  <div class="col-12 col-md-2 mb-3 p-1 img">
-                    <img src="./assets/media/media18.jpg" class="d-block w-100" alt="image">
-                  </div>
-                  
-                </div>
-                </div>
-                </div>
-            
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-          </div>
+        </div>
       </div>
 
+      <div class="container">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <h4>Trending Now</h4>
+            <div class="carousel-item active mt-2 mb-5">
+              <div class="container-fluid p-0">
+                <div class="row">
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media1.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media2.webp"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media3.webp"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media4.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media5.webp"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media6.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <button
+              class="carousel-control-prev left-direction"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon color-arrow mt-3"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next right-direction"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon color-arrow mt-3"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
 
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <h4>Watch It Again</h4>
+            <div class="carousel-item active mt-2 mb-5">
+              <div class="container-fluid p-0">
+                <div class="row">
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media7.webp"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media8.webp"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media9.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media10.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media11.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media12.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
- 
+            <button
+              class="carousel-control-prev left-direction mt-3"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon color-arrow mt-3"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next right-direction"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon color-arrow mt-3"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
 
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <h4>Now Releases</h4>
+            <div class="carousel-item active mt-2 mb-5">
+              <div class="container-fluid p-0">
+                <div class="row">
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media13.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media14.webp"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media15.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media16.webp"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media17.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="col-12 col-md-2 mb-3 p-1 img">
+                    <img
+                      src="./assets/media/media18.jpg"
+                      class="d-block w-100"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-
-
-
-
-
+            <button
+              class="carousel-control-prev left-direction"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon color-arrow mt-3"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next right-direction"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon color-arrow mt-3"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <footer>
+      <div class="container text-secondary d-flex flex-column flex-md-row">
+        <div class="container">
+          <div class="pt-3">
+            <div class="d-flex">
+              <div class="overfooter">
+                <i class="bi bi-facebook fs-4 me-2"></i>
+              </div>
+              <div class="overfooter">
+                <i class="bi bi-twitter fs-4 me-2"></i>
+              </div>
+              <div class="overfooter">
+                <i class="bi bi-instagram fs-4 me-2"></i>
+              </div>
+              <div class="overfooter"><i class="bi bi-youtube fs-4"></i></div>
+            </div>
+
+            <p class="overfooter">Audio and Subtitles</p>
+            <p class="overfooter">Media Center</p>
+            <p class="overfooter">Privacy</p>
+            <p class="overfooter">Contact Us</p>
+            <button
+              class="mb-3 btn border border-1 border-secondary text-secondary rounded-0 overb"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Service Code
+            </button>
+            <p>&copy;1997-2021 Netflix Inc</p>
+          </div>
+        </div>
+        <div class="container mt-md-3">
+          <p class="overfooter">Audio Description</p>
+          <p class="overfooter">Investor Relations</p>
+          <p class="overfooter">Legal Notices</p>
+        </div>
+        <div class="container mt-md-3">
+          <p class="overfooter">Help Center</p>
+          <p class="overfooter">Jobs</p>
+          <p class="overfooter">Cookie Preferencies</p>
+        </div>
+        <div class="container mt-md-3">
+          <p class="overfooter">Gift Cards</p>
+          <p class="overfooter">Terms of Use</p>
+          <p class="overfooter">Corporate Informations</p>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

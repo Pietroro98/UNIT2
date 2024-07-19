@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Profiles</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-bs-theme="dark">
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand overb" href="Homepage.html"
+              ><img src="assets/img/netflix_logo.png" width="100" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link overfooter"
+                    aria-current="page"
+                    href="Homepage.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link overfooter" href="#">Tv Show</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link overfooter" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link overfooter" href="#">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link overfooter" href="#">My List</a>
+                </li>
+              </ul>
+              <div class="d-flex text-secondary align-items-center">
+                <i class="bi bi-search px-3 overfooter"></i>
+                <a class="nav-link px-3 overfooter" href="#">KIDS</a>
+                <i class="bi bi-bell-fill px-3 overfooter"></i>
+                <div class="d-flex">
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle me-5"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="assets/img/kids_icon.png"
+                        width="70"
+                        alt="kids"
+                      />
+                    </button>
+
+                    <ul class="dropdown-menu bg-black">
+                      <li>
+                        <a class="dropdown-item active" href="profile.html"
+                          ><img
+                            src="assets/img/avatar.png"
+                            width="40"
+                            alt="avatar"
+                          />Strive Student</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="profile.html"
+                          >Edit Profiles</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="account.html">Account</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Help Center</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Sign Out</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row text-white offset-4">
+          <div class="col-12">
+            <h1>Edit Profile</h1>
+
+            <div
+              class="col-6 col-lg-8 d-flex flex-column flex-lg-row border-top-1 border border-secondary border-lg border-start-0 border-end-0 border-lg-bottom-0"
+            >
+              <hr class="border-1 m-0" />
+              <div class="d-lg-flex col-lg-8">
+                <div class="col-7 me-lg-3 position-relative">
+                  <img src="assets/img/avatar.png" class="w-75 mt-4" alt="" />
+                  <span class="start-25 m-2 position-absolute"
+                    ><i class="bi bi-brush pennello"></i
+                  ></span>
+                </div>
+
+                <div class="col-9">
+                  <form>
+                    <div class="mb-3 mt-lg-4">
+                      <button
+                        type="submit"
+                        class="btn border-secondary rounded-0 mb-4 overc px-4"
+                      >
+                        Strive Student
+                      </button>
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="disabledSelect"
+                        class="form-labeln text-secondary mb-2"
+                        >Language:</label
+                      >
+                      <select id="disabledSelect" class="form-select">
+                        <option>Italiano</option>
+                        <option>Inglese</option>
+                        <option>Spagnolo</option>
+                        <option>Tetesco</option>
+                        <option>Portoghese</option>
+                        <option>Svedese</option>
+                        <option>Cinese</option>
+                        <option>Giapponese</option>
+                      </select>
+                    </div>
+                    <div class="mb-3"></div>
+                  </form>
+                  <hr class="border-1 m-0" />
+
+                  <form class="mt-3">
+                    <div class="mb-3">
+                      <h4 class="text-secondary">Maturity Settings:</h4>
+                      <button
+                        type="submit"
+                        class="btn grey py-0 rounded-0 my-2"
+                      >
+                        ALL MATURITY RATINGS
+                      </button>
+                      <div id="emailHelp" class="form-text">
+                        Show titles of all maturity ratings for this profile.
+                      </div>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn border-secondary rounded-0 mb-4 text-secondary px-4 overb"
+                    >
+                      EDIT
+                    </button>
+                  </form>
+                  <hr class="border-1 m-0" />
+
+                  <div class="mt-3">
+                    <p class="text-secondary">Autoplay controls:</p>
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input rounded-0 mt-5 mt-lg-3 shadow-none bg-black border-secondary"
+                        id="exampleCheck1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >Autoplay netx eplsode in a series on all
+                        devices.</label
+                      >
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input rounded-0 mt-5 mt-lg-3 shadow-none bg-black border-secondary"
+                        id="exampleCheck1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >Autoplay previews while browsing on all devices.</label
+                      >
+                    </div>
+                  </div>
+
+                  <hr class="border-1 m-0 mt-3" />
+                </div>
+              </div>
+            </div>
+            <div class="col-5 d-flex">
+              <div
+                class="col-lg-12 mt-4 d-flex flex-sm-column flex-md-column flex-lg-row"
+              >
+                <div class="col-4">
+                  <button
+                    type="submit"
+                    class="btn border-secondary rounded-0 mb-2 text-secondary px-4 mx-2 bg-white text-black overb"
+                  >
+                    SAVE
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    type="submit"
+                    class="btn border-secondary rounded-0 mb-2 text-secondary px-4 overb"
+                  >
+                    CANCEL
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn border-secondary rounded-0 mb-2 text-secondary px-4 overb"
+                  >
+                    DELETE PROFILE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

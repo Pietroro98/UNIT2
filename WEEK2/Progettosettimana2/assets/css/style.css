@@ -1,6 +1,56 @@
-*{
+html,body{
     background-color: black;
-    color: white;
     
 }
 
+
+.color-arrow{
+filter: none!important;
+
+} 
+.img{
+    opacity:0.5;
+}
+
+.overfooter:hover ,.img:hover{
+    scale: 1.1;
+    opacity:1;
+    color: white;
+}
+.over:hover{
+    scale: 0.8;
+    color: white;
+}
+.overb:hover{
+    scale: 1.1;
+    background-color: white;
+    color: black!important;
+    
+}
+
+.grey{
+    background-color: #212529;
+    font-weight: 600;   
+}
+
+.pennello:hover{
+    cursor: pointer;
+    scale: 1;
+    background-color:gray;
+}
+
+.overc:hover{
+    scale: 1.1;
+    background-color: gray;
+    
+}
+
+
+@media screen and (min-width:768px){
+    .left-direction{
+        margin-left: -50px;
+    }
+    .right-direction{
+        margin-right: -50px;
+    }
+}    
