@@ -44,7 +44,7 @@ btnDelete.addEventListener('click', remove);
    // Recupera il valore del contatore da sessionStorage o inizializza a 0 se non esiste
    let counter = sessionStorage.getItem('counter') ? parseInt(sessionStorage.getItem('counter')) : 0;
 
-   // Funzione per aggiornare il contatore ogni secondo
+   
    function updateCounter() {
        counter++;
        document.getElementById('counter').textContent = counter;
