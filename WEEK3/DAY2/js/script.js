@@ -11,8 +11,12 @@ const updateDisplayedName = function() {
     } else {
         nameDisplay.innerText = 'Nessun nome salvato!';
     }
+    nome.value = '';
 }
+
 updateDisplayedName();
+
+
 
 
 // Caricare il nome salvato all'avvio
@@ -51,4 +55,4 @@ btnDelete.addEventListener('click', remove);
    setInterval(updateCounter, 1000);
 
    // Mostra il valore iniziale del contatore
-   document.getElementById('counter').textContent = counter;
+   document.getElementById('counter').textContent = counter; 
