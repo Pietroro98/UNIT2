@@ -7,9 +7,9 @@ const updateDisplayedName = function() {
     const savedName = JSON.parse(localStorage.getItem('name'));
     const nameDisplay = document.getElementById('infoTesto');
     if (savedName) {
-        nameDisplay.innerText = `${savedName}`;
+        nameDisplay.innerText = `Il nome salvato è: ${savedName}`;
     } else {
-        nameDisplay.innerText = '';
+        nameDisplay.innerText = 'Nessun nome salvato!';
     }
 }
 updateDisplayedName();
@@ -31,3 +31,24 @@ const remove = function() {
 }
 
 btnDelete.addEventListener('click', remove);
+
+
+
+
+
+
+   // Recupera il valore del contatore da sessionStorage o inizializza a 0 se non esiste
+   let counter = sessionStorage.getItem('counter') ? parseInt(sessionStorage.getItem('counter')) : 0;
+
+   // Funzione per aggiornare il contatore ogni secondo
+   function updateCounter() {
+       counter++;
+       document.getElementById('counter').textContent = counter;
+       sessionStorage.setItem('counter', counter);
+   }
+
+   // Imposta l'intervallo per aggiornare il contatore ogni secondo
+   setInterval(updateCounter, 1000);
+
+   // Mostra il valore iniziale del contatore
+   document.getElementById('counter').textContent = counter;
