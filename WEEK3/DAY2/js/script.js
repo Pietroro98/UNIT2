@@ -3,7 +3,10 @@ const btnAdd = document.getElementById("btnAdd");
 const btnDelete = document.getElementById("btnDelete");
 const infoTesto = document.getElementById("infoTesto");
 
-const updateDisplayedName = function() {
+
+//funzione per aggiornare la visualizzazione del nome aggiornato
+
+const showSavedName = function() {
     const savedName = JSON.parse(localStorage.getItem('name'));
     const nameDisplay = document.getElementById('infoTesto');
     if (savedName) {
@@ -14,7 +17,7 @@ const updateDisplayedName = function() {
     nome.value = '';
 }
 
-updateDisplayedName();
+showSavedName();
 
 
 
@@ -24,14 +27,14 @@ updateDisplayedName();
 const save = function() {
     const nameInput = document.getElementById('nome').value;
     localStorage.setItem('name', JSON.stringify(nameInput));
-    updateDisplayedName();
+    showSavedName();
 }
 
 btnAdd.addEventListener('click', save);
 
 const remove = function() {
     localStorage.removeItem('name');
-    updateDisplayedName();
+    showSavedName();
 }
 
 btnDelete.addEventListener('click', remove);
