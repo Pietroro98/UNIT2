@@ -6,7 +6,7 @@ const coverBook = function () {
       if (response.ok) {
         return response.json();
       } else {
-        throw new Error("error 404");
+        throw new Error("error");
       }
     })
     .then((bookData) => {
@@ -43,7 +43,5 @@ function deleteCard(index) {
     books.splice(index, 1)
     loadCard()
 }
-
-
 
 coverBook();
