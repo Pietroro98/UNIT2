@@ -21,7 +21,7 @@ const getProducts = function () {
 
       products.forEach((product) => {
         const productCol = `
-        <div class="col-12 col-md-4 col-lg-3 mb-4">
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
             <div class="card h-100">
               <div class="card-img-container">
                 <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
