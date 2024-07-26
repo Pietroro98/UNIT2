@@ -11,21 +11,21 @@ function showProductDetails(product) {
   const detailRow = document.getElementById("detail-row");
   detailRow.innerHTML = `
     <div class="col mb-4">
-      <div class="card w-50">
-        <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}">
-        <div class="card-body">
-          <h5 class="card-title">${product.name}</h5>
-          <hr />
-          <p class="card-text">${product.brand}</p>
-          <hr />
-          <p class="card-text">${product.description}</p>
-          <p class="card-text">${product.price}€</p>
-          <hr />
-          <a href="./backoffice.html?productId=${product._id}" class="btn btn-warning me-2">Edit</a>
-          <button class="btn btn-danger" id="delete-button">Delete</button>
+        <div class="card flex-md-row">
+          <img src="${product.imageUrl}" class="card-img-left img-fluid w-100" alt="${product.name}" style="width: 150px; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title">${product.name}</h5>
+            <hr />
+            <p class="card-text">${product.brand}</p>
+            <hr />
+            <p class="card-text">${product.description}</p>
+            <p class="card-text">${product.price}€</p>
+            <hr />
+            <a href="./backoffice.html?productId=${product._id}" class="btn btn-warning me-2">Edit</a>
+            <button class="btn btn-danger" id="delete-button" onclick="deleteProduct()">Delete</button>
+          </div>
         </div>
       </div>
-    </div>
   `;
 
   // Aggiungi l'evento click al pulsante di eliminazione
