@@ -14,7 +14,6 @@ function populateForm(product) {
 
 // Funzione per gestire il salvataggio del prodotto
 function saveProduct() {
-  // Recupero i dati dal modulo
   const name = document.getElementById("inputName").value;
   const brand = document.getElementById("inputBrand").value;
   const price = document.getElementById("inputPrezzo").value;
