@@ -2,10 +2,10 @@ const URL = "https://api.pexels.com/v1/search?query=";
 const apiKey = "mDwobpyvaWfEmarsZQNoS4htdqpbWwq7tvwX9BC7WaQEnJ4zkqk73U5M";
 
 document.getElementById("loadImagesButton").addEventListener("click", () => {
-  loadImages("stupid");
+  loadImages("Underwater");
 });
 document.getElementById("loadSecondaryImagesButton").addEventListener("click", () => {
-    loadImages("animals");
+    loadImages("cars");
   });
 
 const loadImages = function (query) {
@@ -32,14 +32,13 @@ const loadImages = function (query) {
 
 function loadImageCards(images) {
   const imagesContainer = document.getElementById("imageContainer");
-  imagesContainer.innerHTML = ""; // Pulisce il contenitore esistente
+  imagesContainer.innerHTML = ""; // svuota il contenitore al caricamento nel nuovo
 
-  images.forEach((image, index) => {
+  images.forEach((image) => {
     const card = document.createElement("div");
     card.classList.add("col-md-4");
-    card.id = `card-${index}`; 
     card.innerHTML = `
-            <div class="card mb-4 shadow-sm">
+            <div class="card mb-4 shadow-sm w-100">
                 <img src="${image.src.medium}" class="card-img-top" alt="${image.alt}">
                 <div class="card-body">
                     <h5 class="card-title">${image.photographer}</h5>
