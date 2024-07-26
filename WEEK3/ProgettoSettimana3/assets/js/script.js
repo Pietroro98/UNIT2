@@ -3,6 +3,9 @@ const getProducts = function () {
   const token =
     "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmEzNjE4MGYyNjBjYzAwMTVjYzBkZWIiLCJpYXQiOjE3MjE5ODMzNjAsImV4cCI6MTcyMzE5Mjk2MH0.4HMYcaTQzylGef5SY9hmzHNlwkBHL5h8TzDLTSJCvfU";
 
+  const loadingIndicator = document.getElementById("loadingIndicator");
+  loadingIndicator.style.display = "inline-block";
+
   fetch(URL, {
     headers: {
       Authorization: token,
@@ -44,9 +47,11 @@ const getProducts = function () {
         `;
         cartContainer.innerHTML += productCol;
       });
+      loadingIndicator.style.display = "none";
     })
     .catch((error) => {
       console.error("Error:", error);
+      loadingIndicator.style.display = "none";
     });
 };
 
